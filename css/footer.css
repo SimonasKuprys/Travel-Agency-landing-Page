@@ -1,0 +1,30 @@
+footer{
+    background-color: orange;
+}
+h3,h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.footer-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+a{
+    text-decoration: underline;
+    color: black;
+}
+.container-md{
+    max-width: 800px;
+}
+@media screen and (min-width: 767px) {
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}

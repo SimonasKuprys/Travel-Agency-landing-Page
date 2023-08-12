@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.success-message {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.success-message h1 {
+  font: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.success-message button{
+  background-color: orange;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.success-message button:hover {
+  background-color: rgb(209, 139, 9);
+}
+
+.success-message button a{
+  text-decoration: none;
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,39 @@
+
+h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#destinations-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
+    gap: 10px;
+}
+#destinations-img a {
+    display: block;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+#destinations-img a:hover {
+transform: scale(1.05);
+}
+
+#destinations-img img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    #destinations-img{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #text-container{
+        display:flex;
+        gap: 20px;
+    }
+}
+
+
