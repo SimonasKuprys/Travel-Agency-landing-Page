@@ -3,10 +3,6 @@
   background-size: cover;
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
-
 h2{
     color: white
 }
@@ -61,41 +57,89 @@ h2{
   justify-content: center;
 }
 
-.booking-form label {
-  text-align: right;
+
+#btn-container{
+  margin-top: 30px;
 }
 
-.booking-form input {
-  width: 60%;
-  padding: 8px;
-  border: none;
-  border-radius: 3px;
-  justify-self: center;
+#btn-back-to-gallery:active,
+#btn-homepage:active{
+  background-color: white;
 }
 
-.btn-book-now,
 .btn-back-to-gallery,
 .btn-homepage{
     font-size: 15px;
     border-radius: 4px;
-    background-color: white;
+    background-color: orange;
     border: none;
-    color:black;
+    color:white;
     padding: 10px;
     margin: 5px;
 }
 
-.btn-book-now:hover,
+
 .btn-back-to-gallery:hover,
 .btn-homepage:hover{
-    background-color: orange;
+    background-color: white;
+    color: black;
 }
 
-.btn-book-now:active,
+
 .btn-back-to-gallery:active,
 .btn-homepage:active{
     background-color: orange;
 }  
+
+.individual-booking-form{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#individual-book form {
+  display: grid;
+  grid-template-areas:
+      "individual-from individual-to individual-guests"
+      "individual-submit individual-submit individual-submit";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+#individual-book button {
+  border-radius: 100px;
+  margin-top: 30px;
+}
+
+#individual-book-field-guests{
+  width: 100%;
+}
+
+#individual-book form input {
+  border-radius: 5px;
+  border:none;
+}
+
+#individual-book form .individual-from {
+  grid-area: individual-from;
+}
+
+#individual-book form .individual-to {
+  grid-area: individual-to;
+}
+
+#individual-book form .individual-guests {
+  grid-area: individual-guests;
+}
+
+#individual-book form .individual-submit {
+  grid-area: individual-submit;
+}
+
+#individual-book form .individual-submit button {
+  width: 100%;
+}
+
 
 .destination-info img{
   border-radius: 3px;
@@ -110,12 +154,16 @@ h2{
 }
 
 @media screen and (min-width: 767px) {
-  .booking-form form {
+  /* .booking-form form {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .booking-form input{
     width: 100%;
-  }
+  } */
+  #individual-book form {
+    grid-template-areas:
+        "individual-from individual-to individual-guests individual-submit";
+    }
   .picture-container {
     display: flex;
     justify-content: space-between;
@@ -126,7 +174,7 @@ h2{
   .second-card{
     display: none;
   } 
-  #btn-container{
+  /* #btn-container{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -136,6 +184,6 @@ h2{
   #btn-container a{
     width: 40%;
     justify-self: center;
-  }
+  } */
   }
 

@@ -21,6 +21,7 @@ h1{
   gap: 10px;
   padding: 20px;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .gallery-item {
@@ -67,18 +68,19 @@ h1{
 .btn-homepage{
     font-size: 15px;
     border-radius: 4px;
-    background-color: white;
+    background-color: orange;
     border: none;
-    color:black;
+    color:white;
     
 }
 
 .btn-homepage:hover{
-    background-color: orange;
+    background-color: white;
+    color: black;
 }
 
-.btn-homepage:active{
-    background-color: orange;
+#btn-homepage:active{
+    background-color: white;
 }  
 
   @media screen and (min-width: 767px) {

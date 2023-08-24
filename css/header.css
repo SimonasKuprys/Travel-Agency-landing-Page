@@ -1,14 +1,17 @@
-header{
-    background-image: url("/images/header.jpg");
+#header{
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: white;
     padding: 20px;
     font-family:Arial, sans-serif;
+}
+
+.main-page{
+    height: 100vh;
+    background-image: url("/images/header.jpg");
 }
 
 h1, h2{
@@ -42,7 +45,7 @@ h1, h2{
 #search-field{
     background-color: transparent;
     border:none;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #top-bar-btns{
@@ -50,7 +53,45 @@ h1, h2{
     align-self: center;
 }
 
-.btn-contact,
+.dropdown{
+    align-self: center;
+    justify-self: end;
+}
+
+.btn-sm::after{
+    /* display: none; */
+    /* content: none; */
+    color: orange;
+}
+
+.btn-sm,
+.dropdown-toggle{
+    background-color: orange;
+    border: none;
+}
+
+.btn-sm:hover{
+    background-color: white;
+    color: black;
+}
+
+.dropdown-item{
+    color: white;
+    background-color: orange;
+}
+.dropdown-menu{
+    color: black;
+    background-color: orange;
+}
+#dropdown-item-1:active,
+#dropdown-item-2:active{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* .btn-contact,
 .btn-destinations{
     font-size: 15px;
     border-radius: 4px;
@@ -65,11 +106,13 @@ h1, h2{
     background-color: white;
     color: black;   
 }
-
+#btn-boot:active{
+    background-color: orange;
+}
 .btn-contact:active,
 .btn-destinations:active{
     background-color: orange;
-}  
+}   */
 
 #book form {
     display: grid;
@@ -111,20 +154,20 @@ h1, h2{
     width: 100%;
 }
 
-.btn-group-vertical .btn-destinations{
+/* .btn-group-vertical .btn-destinations{
     border-bottom:inset
 }
 
 .btn-group-horizontal .btn-destinations{
     border-right:inset
-}
+} */
 
-
+/* 
 @media screen and (max-width: 767px) {
     .btn-group-horizontal{
         display:none
     }
-}
+} */
 @media screen and (min-width: 768px) {
     #book form {
     grid-template-areas:
